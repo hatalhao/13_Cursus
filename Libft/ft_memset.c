@@ -16,13 +16,3 @@ void    *ft_memset(void *s, int c, unsigned int n)
     }
     return (str);
 }
-
-#include <stdio.h>
-
-int main()
-{
-    char arr[] = "Gorillaz";
-    printf("%p\n", ft_memset(arr, 7, 3));
-    printf("%s\n", arr);
-    return (0);
-}
