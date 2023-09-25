@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": false,
       "cwd": "/home/talhaoui/13_Cursus/Libft",
-      "program": "/home/talhaoui/13_Cursus/Libft/ft_split",
+      "program": "/home/talhaoui/13_Cursus/Libft/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
