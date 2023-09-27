@@ -51,9 +51,8 @@ char **ft_split(char const *s, char c)
 
     i1 = 0;
     j = 0;
-    while (str[i1])
+    while (str[i1] && tcS[j])
     {
-        //printf("[%d]\n", j);
         while (tcS[j] == c)
             j++;
         while (tcS[j] != c && tcS[j])
@@ -62,12 +61,14 @@ char **ft_split(char const *s, char c)
             j++;
             i2++;
         }
-        if (tcS[j] && tcS[j + 1] && tcS[j + 1] != c)
+        if (tcS[j])
         {
             str[i1][i2] = '\0';
             i1++;
             i2 = 0;
         }
+        else if (tcS[j] == '\0')
+            break;
         j++;
     }
     return (str);
@@ -77,7 +78,7 @@ int main()
 {
     char    *str;
 
-    str = "    asd sdf";
+    str = " Hello world";
     char** ret = ft_split(str, ' ');
     int i = 0;
     while (ret[i])
