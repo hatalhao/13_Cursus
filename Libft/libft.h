@@ -37,6 +37,7 @@ void	*ft_memmove(void *dest, const void *src, unsigned int n);
 unsigned int	ft_strlen(char *str);
 unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size);
 unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size);
+char	**ft_split(char const *s, char c);
 
 //To Do
 
@@ -45,5 +46,4 @@ char	*ft_itoa(int n);
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-char	**ft_split(char const *s, char c);
 #endif
