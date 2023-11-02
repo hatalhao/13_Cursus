@@ -57,7 +57,7 @@ char **ft_split(char const *s, char c)
     }
 
     str[counter] = NULL;
-    return str;
+    return (str);
 }
 
 int main()

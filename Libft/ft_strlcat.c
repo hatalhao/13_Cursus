@@ -1,15 +1,15 @@
 #include "libft.h"
-#include <string.h>
 
-unsigned int    ft_strlcat(char* dest, const char *src, unsigned int size)
+size_t    ft_strlcat(char* dest, const char *src, size_t size)
 {
-    unsigned int    slen;
-    unsigned int    dlen;
-    unsigned int    tlen;
-    unsigned int    i;
+    size_t    slen;
+    size_t    dlen;
+    size_t    tlen;
+    size_t    i;
 
-    slen = strlen(src);
-    dlen = strlen(dest);
+    
+    slen = ft_strlen(src);
+    dlen = ft_strlen(dest);
     i = 0;
     if (size == 0)
         tlen = slen;
@@ -36,6 +36,6 @@ int main()
 {
     char arr1[] = "Hello ";
     char arr2[] = "everyone";
-    printf("%d\n", ft_strlcat(arr1, arr2, 80));
+    printf("%ld\n", ft_strlcat(arr1, arr2, 80));
     return (0);
 }

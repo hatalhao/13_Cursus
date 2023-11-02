@@ -1,6 +1,6 @@
 #include "libft.h"
 
-char    *ft_strdup(char *src)
+char    *ft_strdup(const char *src)
 {
     int     i;
     char    *duplicate;
@@ -17,4 +17,11 @@ char    *ft_strdup(char *src)
             i++;
         }
     return (duplicate);
+}
+
+int main()
+{
+    const char  *str = "Hello everyone";
+    printf("%s", ft_strdup(str));
+    return (0);
 }
